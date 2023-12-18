@@ -11,7 +11,7 @@ import {
 
 const router = express.Router();
 
-router.get("/:id", getRooms);
+router.get("/", getRooms);
 router.get("/:id", getRoom);
 router.delete("/:id/:hotelId", verifyAdmin, deleteRoom);
 router.post("/:hotelId", verifyAdmin, createRoom);
